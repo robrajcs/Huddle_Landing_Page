@@ -14,8 +14,6 @@
 body {
     background-color: var(--violet);
     background-image: url('./images/bg-mobile.svg');
-    sbackground-size: cover;
-    dbackground-position: top cente;
     background-repeat: no-repeat;
     background-blend-mode: overlay;
     color: white;
@@ -50,13 +48,10 @@ section {
     object-fit: contain;
     margin: 4rem 0;
 }
-.section0 h1 {
-    text-align: left;
-}
-.section1 h1 {
+.section2 h1 {
     font-family: "Poppins";
     font-weight: 600;
-    margin: 2rem 0 1rem 0;
+    margin: 0 0 1rem 0;
 }
 
 button {
@@ -97,4 +92,52 @@ ion-icon:hover {
     color: var(--soft-magenta);
     border-color: var(--soft-magenta);
     transition: 0.5s;
+}
+
+
+@media screen and (min-width:1440px) {
+    body {
+        text-align: left;
+        background-image: url("./images/bg-desktop.svg");
+        background-size: cover;
+    }
+    main {
+        max-width: 90%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        dalign-items: stretch;
+    }    
+
+    .section0 {
+        flex: 1 0 100%;
+        margin-top: 5vh;
+    }
+    .section1, .section2 {
+        flex: 1 1 50%;
+    }
+    .section2 {
+        padding: 0 3rem;
+    }
+
+    .section0 img {
+        max-width: 15vw;
+    }
+    .section1 img {
+        margin: 2rem auto;
+    }
+
+    .section2 h1 {
+        font-size: 2.5rem;
+        font-weight: 600;
+        margin-bottom: 2rem;
+    }
+
+    ul {
+        justify-content: flex-end;
+    }
+    
+    button {
+        margin: 2rem 0;
+    }
 }
