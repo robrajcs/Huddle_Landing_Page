@@ -1,0 +1,54 @@
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--violet);
+    background-image: url('./images/bg-mobile.svg');
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    color: white;
+    font-weight: 400;
+    min-height: 100vh;
+}
+
+main {
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem auto;
+}
+
+section {
+    width: 80%;
+    margin: 0 auto;
+}
+.section1 img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+button {
+    background-color: white;
+    color: var(--violet);
+    border: 0;
+    border-radius: 50px;
+    box-shadow: 5px 5px 3px rgb(50,50,50,.5);
+    padding: 1em 5em;
+    display: block;
+    fmargin: 0 auto;
+}
